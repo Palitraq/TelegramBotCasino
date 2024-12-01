@@ -59,4 +59,4 @@ python casino_bot.py
 - Кастомизация под конкретные нужды
 
 ## Поддержка
-По вопросам и предложениям: https://funpay.com/users/2551770/
+По вопросам и предложениям: [funpay](https://funpay.com/users/2551770/) or [github](https://github.com/Palitraq/TelegramBotCasino/issues)

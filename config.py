@@ -1,11 +1,11 @@
 # Конфигурационный файл для хранения чувствительных данных
 
 # Токен Telegram бота (BotFather))
-BOT_TOKEN = "7514444798:AAGavu9pJBYauDYvTCHodQXzITi2eNuuxvY"
+BOT_TOKEN = ""
 
 # ID администраторов (можно добавить несколько)
 ADMIN_IDS = [
-    1056718337,  # Замените на ваш реальный Telegram user ID
+    125153523,  # Замените на ваш реальный Telegram user ID
 ]
 
 # Настройки базы данных

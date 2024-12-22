@@ -1,3 +1,2 @@
 python-telegram-bot==20.0
-telegram==0.0.1
-sqlite3  # Встроенная библиотека Python, но добавлена для явности
+

@@ -1,11 +1,12 @@
-from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext, MessageHandler, filters, ConversationHandler
+from telegram import Update, ReplyKeyboardMarkup
 import datetime
 import random
 from database import (get_user_balance, update_user_balance, get_last_claim, 
                       update_last_claim, log_user_login, get_total_users, 
                       get_total_logins, is_admin)
 import config
+from config import SLOT_SYMBOLS
 
 # Состояния для ConversationHandler
 WAITING_FOR_BET = 0
@@ -75,7 +76,7 @@ async def process_bet(update: Update, context: CallbackContext) -> int:
 
         # Игровая логика
         balance -= bet_amount
-        symbols = ['', '', '', '', '']
+        symbols = SLOT_SYMBOLS
         result = [random.choice(symbols) for _ in range(3)]
 
         if result[0] == result[1] == result[2]:
